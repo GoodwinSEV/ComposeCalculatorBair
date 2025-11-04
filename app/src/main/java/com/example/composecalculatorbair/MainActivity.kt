@@ -1,5 +1,4 @@
 package com.example.composecalculatorbair
-
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -16,6 +15,7 @@ import com.example.composecalculatorbair.ui.theme.ComposeCalculatorBairTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         enableEdgeToEdge()
         setContent {
             ComposeCalculatorBairTheme {
@@ -24,6 +24,8 @@ class MainActivity : ComponentActivity() {
                         name = "Android",
                         modifier = Modifier.padding(innerPadding)
                     )
+
+
                 }
             }
         }
